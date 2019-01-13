@@ -27,7 +27,9 @@
         app:layout_constraintEnd_toStartOf="@+id/bt_five"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@id/guideline_vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/tv_one" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_one"
+        app:layout_constraintBottom_toTopOf="@id/tv_four"
+        />
 
     <Button
         android:id="@+id/bt_seven"
@@ -38,7 +40,9 @@
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintEnd_toStartOf="@+id/bt_eight"
         app:layout_constraintStart_toStartOf="@+id/guideline_vertical_left"
-        app:layout_constraintTop_toBottomOf="@+id/tv_four" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_four"
+        app:layout_constraintBottom_toTopOf="@+id/tv_seven"
+        />
 
     <Button
         android:id="@+id/bt_two"
@@ -64,10 +68,11 @@
         android:id="@+id/tv_one"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="8dp"
         android:text="One"
+        app:layout_constraintBottom_toTopOf="@+id/bt_four"
         app:layout_constraintEnd_toEndOf="@+id/bt_one"
         app:layout_constraintStart_toStartOf="@+id/guideline_vertical_left"
         app:layout_constraintTop_toBottomOf="@+id/bt_one" />
@@ -80,7 +85,9 @@
         android:text="Four"
         app:layout_constraintEnd_toEndOf="@+id/bt_four"
         app:layout_constraintStart_toStartOf="@+id/bt_four"
-        app:layout_constraintTop_toBottomOf="@+id/bt_four" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_four"
+        app:layout_constraintBottom_toTopOf="@id/bt_seven"
+        />
 
     <TextView
         android:id="@+id/tv_seven"
