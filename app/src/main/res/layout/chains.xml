@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="One"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintEnd_toStartOf="@id/bt_two"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_one"
+        />
+
+    <Button
+        android:id="@+id/bt_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Four"
+        app:layout_constraintEnd_toStartOf="@+id/bt_five"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_one" />
+
+    <Button
+        android:id="@+id/bt_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Seven"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintEnd_toStartOf="@+id/bt_eight"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/tv_four" />
+
+    <Button
+        android:id="@+id/bt_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Two"
+        app:layout_constraintEnd_toStartOf="@+id/bt_three"
+        app:layout_constraintStart_toEndOf="@+id/bt_one"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Three"
+        app:layout_constraintStart_toEndOf="@id/bt_two"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_right"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="One"
+        app:layout_constraintEnd_toEndOf="@+id/bt_one"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_left"
+        app:layout_constraintTop_toBottomOf="@+id/bt_one" />
+
+    <TextView
+        android:id="@+id/tv_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Four"
+        app:layout_constraintEnd_toEndOf="@+id/bt_four"
+        app:layout_constraintStart_toStartOf="@+id/bt_four"
+        app:layout_constraintTop_toBottomOf="@+id/bt_four" />
+
+    <TextView
+        android:id="@+id/tv_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Seven"
+        app:layout_constraintEnd_toEndOf="@+id/bt_seven"
+        app:layout_constraintStart_toStartOf="@+id/bt_seven"
+        app:layout_constraintTop_toBottomOf="@+id/bt_seven" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vertical_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <TextView
+        android:id="@+id/tv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Two"
+        app:layout_constraintEnd_toEndOf="@+id/bt_two"
+        app:layout_constraintStart_toStartOf="@+id/bt_two"
+        app:layout_constraintTop_toBottomOf="@+id/bt_two" />
+
+    <TextView
+        android:id="@+id/tv_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Three"
+        app:layout_constraintEnd_toEndOf="@+id/bt_three"
+        app:layout_constraintStart_toStartOf="@+id/bt_three"
+        app:layout_constraintTop_toBottomOf="@+id/bt_three" />
+
+    <Button
+        android:id="@+id/bt_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Six"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_right"
+        app:layout_constraintStart_toEndOf="@+id/bt_five"
+        app:layout_constraintTop_toBottomOf="@+id/tv_three" />
+
+    <Button
+        android:id="@+id/bt_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Five"
+        app:layout_constraintEnd_toStartOf="@+id/bt_six"
+        app:layout_constraintStart_toEndOf="@+id/bt_four"
+        app:layout_constraintTop_toBottomOf="@+id/tv_two" />
+
+    <TextView
+        android:id="@+id/tv_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Six"
+        app:layout_constraintEnd_toEndOf="@+id/bt_six"
+        app:layout_constraintStart_toStartOf="@+id/bt_six"
+        app:layout_constraintTop_toBottomOf="@+id/bt_six" />
+
+    <TextView
+        android:id="@+id/tv_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Five"
+        app:layout_constraintEnd_toEndOf="@+id/bt_five"
+        app:layout_constraintStart_toStartOf="@+id/bt_five"
+        app:layout_constraintTop_toBottomOf="@+id/bt_five" />
+
+    <Button
+        android:id="@+id/bt_nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nine"
+        app:layout_constraintStart_toEndOf="@id/bt_eight"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vertical_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_six" />
+
+    <Button
+        android:id="@+id/bt_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Eight"
+        app:layout_constraintEnd_toStartOf="@+id/bt_nine"
+        app:layout_constraintStart_toEndOf="@+id/bt_seven"
+        app:layout_constraintTop_toBottomOf="@+id/tv_five" />
+
+    <TextView
+        android:id="@+id/tv_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Eight"
+        app:layout_constraintEnd_toEndOf="@+id/bt_eight"
+        app:layout_constraintStart_toStartOf="@+id/bt_eight"
+        app:layout_constraintTop_toBottomOf="@+id/bt_eight" />
+
+    <TextView
+        android:id="@+id/tv_nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nine"
+        app:layout_constraintEnd_toEndOf="@+id/bt_nine"
+        app:layout_constraintStart_toStartOf="@+id/bt_nine"
+        app:layout_constraintTop_toBottomOf="@+id/bt_nine" />
+
+</android.support.constraint.ConstraintLayout>
